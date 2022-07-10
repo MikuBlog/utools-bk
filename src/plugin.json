@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "pluginName": "百科",
+  "homepage": "https://github.com/MikuBlog",
+  "logo": "logo.png",
+  "author": "xuanzai",
+  "preload": "preload.js",
+  "features": [
+    {
+      "code": "utools-bk",
+      "explain": "不懂就查！", 
+      "cmds": [
+        {
+					"type": "over",
+					"label": "百科"
+				}
+      ]
+    }
+  ]
+}
