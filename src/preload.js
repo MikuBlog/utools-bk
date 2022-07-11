@@ -70,7 +70,7 @@ window.exports = {
                window.utools.outPlugin()
             }, 500);
          },
-         placeholder: '请输入食物名称',
+         placeholder: '请输入内容查询',
       },
    },
    "utools-bk-super": {
@@ -95,7 +95,7 @@ window.exports = {
                window.utools.outPlugin()
             }, 500);
          },
-         placeholder: '请输入食物名称',
+         placeholder: '请输入内容查询',
       },
    }
 }
