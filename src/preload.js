@@ -39,14 +39,14 @@ function handleOutput(searchWord, callbackSetList = () => {}) {
          callbackSetList([{
             title: '没有找到相关结果',
             description: '回车前往百度搜索',
-            arg: `https://www.baidu.com/s?wd=${encodeInput}`,
+            url: `https://www.baidu.com/s?wd=${encodeInput}`,
          }])
       }
    }).catch(err => {
       callbackSetList([{
          title: '没有找到相关结果',
          description: '回车前往百度搜索',
-         arg: `https://www.baidu.com/s?wd=${encodeInput}`,
+         url: `https://www.baidu.com/s?wd=${encodeInput}`,
       }])
    })
 }
