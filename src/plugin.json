@@ -10,6 +10,13 @@
       "code": "utools-bk",
       "explain": "不懂就查！", 
       "cmds": [
+        "百科"
+      ]
+    },
+    {
+      "code": "utools-bk-super",
+      "explain": "不懂就查！", 
+      "cmds": [
         {
 					"type": "over",
 					"label": "百科"

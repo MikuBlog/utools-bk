@@ -56,6 +56,27 @@ window.exports = {
       mode: "list",
       args: {
          enter: (action, callbackSetList) => {
+            // 无操作
+         },
+         search: async (action, searchWord, callbackSetList) => {
+            handleOutput(searchWord, callbackSetList);
+         },
+         // 用户选择列表中某个条目时被调用
+         select: (action, itemData) => {
+            window.utools.hideMainWindow()
+            require('electron').shell.openExternal(itemData.url)
+            // 保证网页正常跳转再关闭插件
+            setTimeout(() => {
+               window.utools.outPlugin()
+            }, 500);
+         },
+         placeholder: '请输入食物名称',
+      },
+   },
+   "utools-bk-super": {
+      mode: "list",
+      args: {
+         enter: (action, callbackSetList) => {
             // 设置初始值
             setTimeout(() => {
                utools.setSubInputValue(action.payload);
